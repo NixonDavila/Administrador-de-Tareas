@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+#moverImg{
+  padding: 2.5em;
+
+}
+body{
+    background: url(../img/justin-gladis-ice-age-04.jpg) no-repeat ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 50px;
+}
+
+#ardilla{
+height: 110px;
+width: 70px;
+margin-left: 450px;
+margin-top: 0%;
+
+}
+
+#sid{
+    height: 140px;
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 10%;
+}
+
+#Granny{
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    left: 65%;
+}
+
+#conteiner{
+  
+    display: flex;
+    justify-content: space-around;
+}
+
+#tareas{
+   
+    width: 40%;
+    height: 300px;
+    overflow: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloTarea{
+    position: absolute;
+    top: 40px;
+    left: 40%;
+}
+
+.tituloEvento{
+    position: absolute;
+    top: 40px;
+    left: 40%;
+}
+
+#eventos{
+   
+    width: 40%;
+    height: 300px;
+    overflow: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
