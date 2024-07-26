@@ -97,3 +97,12 @@ margin-top: 0%;
     justify-content: center;
     align-items: center;
 }
+
+
+
+@media (max-width: 576px) {
+    .input-box .input-field {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }

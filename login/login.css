@@ -9,6 +9,9 @@
 }
 
 body {
+
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +19,12 @@ body {
     background: url(../img/uwp4292656.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
+
+   
+
 }
+
+
 
 header {
     position: fixed;

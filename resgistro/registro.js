@@ -51,3 +51,9 @@ enviarRegis.addEventListener("click", function () {
 
     
 });
+
+
+
+
+
+
