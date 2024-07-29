@@ -101,6 +101,25 @@ margin-top: 0%;
     
 }
 
+#event{
+    position: absolute;
+    top: 80px;
+    left: 10%;
+}
+
+
+#fecha{
+    height: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+}
+
+#agregarEvento{
+    position: absolute;
+    top: 80px;
+    left: 78%;
+}
 
 
 #TareaInput {
