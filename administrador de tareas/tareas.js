@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     let tareasInput = document.getElementById("TareaInput");
-    let tipoSelect = document.getElementById('tipo');
+    let fechaSelect = document.getElementById('fecha');
     let agregarTareas = document.getElementById("agregarTarea");
     let conteiner = document.getElementById("contenedor");
     let tareas = document.getElementById("tareas");
@@ -58,14 +58,27 @@ document.addEventListener("DOMContentLoaded", function(){
     listaTarea.forEach(displayTask);
 
     agregarTareas.addEventListener("click" , function () {
+       
+        const tareaTexto = tareasInput.value.trim(); // Eliminamos espacios en blanco
+
+        // Comprobar si el input está vacío
+        if (tareaTexto === "") {
+            alert("Por favor, ingresa una tarea válida.");
+            return; // No agregar la tarea si está vacía
+        }
+       
+       
         const tareaData = {
             tarea: tareasInput.value,
-            seleccion: tipoSelect.value
+            seleccion: fechaSelect.value
         };
 
         listaTarea.push(tareaData);
         localStorage.setItem("tareas", JSON.stringify(listaTarea));
         
         displayTask(tareaData);
+
+        tareasInput.value = "";
+        seleccion.value = "";
     });
 });

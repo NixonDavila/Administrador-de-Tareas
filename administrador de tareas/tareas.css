@@ -3,21 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
 }
-#moverImg{
-  padding: 2.5em;
 
+#moverImg {
+    padding: 2.5em;
 }
-body{
-    background: url(../img/justin-gladis-ice-age-04.jpg) no-repeat ;
+
+body {
+    background: url(../img/justin-gladis-ice-age-04.jpg) no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 
-h1{
+h1 {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -27,15 +27,14 @@ h1{
     font-size: 50px;
 }
 
-#ardilla{
-height: 110px;
-width: 70px;
-margin-left: 450px;
-margin-top: 0%;
-
+#ardilla {
+    height: 110px;
+    width: 70px;
+    margin-left: 450px;
+    margin-top: 0%;
 }
 
-#sid{
+#sid {
     height: 140px;
     width: 300px;
     position: absolute;
@@ -43,7 +42,7 @@ margin-top: 0%;
     left: 10%;
 }
 
-#Granny{
+#Granny {
     height: 150px;
     width: 200px;
     position: absolute;
@@ -51,44 +50,16 @@ margin-top: 0%;
     left: 65%;
 }
 
-#conteiner{
-  
+#conteiner {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-#tareas{
-   
+#tareas,
+#eventos {
     width: 40%;
-    height: 300px;
-    overflow: auto;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  
-    display: flex;
-    justify-content: center;
-  
-   
-}
-.tituloTarea{
-    position: absolute;
-    top: 40px;
-    left: 40%;
-}
-
-.tituloEvento{
-    position: absolute;
-    top: 40px;
-    left: 40%;
-}
-
-#eventos{
-   
-    width: 40%;
-    height: 300px;
+    height: auto; /* Cambiado a auto para que se adapte al contenido */
     overflow: auto;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
@@ -96,68 +67,125 @@ margin-top: 0%;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    
+    flex-direction: column; /* Alinear elementos en columna */
+    padding: 20px; /* Espaciado interno */
 }
 
-#event{
-    position: absolute;
-    top: 80px;
-    left: 10%;
+.tituloTarea,
+.tituloEvento {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
 }
 
-
-#fecha{
-    height: 20px;
-    position: absolute;
-    top: 80px;
-    left: 50%;
+#eventos {
+    margin-left: 0; /* Eliminar margen en pantallas pequeñas */
 }
 
-#agregarEvento{
-    position: absolute;
-    top: 80px;
-    left: 78%;
+#event,
+#fecha,
+#TareaInput,
+#tipo {
+    width: 100%; /* Hacer que los inputs ocupen el 100% del ancho */
+    margin: 5px 0; /* Margen para los inputs */
 }
 
-
-#TareaInput {
-    position: absolute;
-    top: 80px;
-    left: 10%;
+#agregarEvento,
+#agregarTarea {
+    width: 100%; /* Botones también ocupan el 100% del ancho */
+    margin-top: 10px; /* Margen superior para separación */
 }
 
-#tipo{
-    width: 70px;
-    position: absolute;
-    top: 80px;
-    left: 52%;
-}
-#agregarTarea{
-    position: absolute;
-    top: 80px;
-    left: 70%;
+#contenedor,
+#cont-eventos {
+    margin-top: 20px; /* Espacio entre el contenedor y la parte superior */
+    width: 100%; /* Asegurar que los contenedores ocupen el 100% */
+    height: auto; /* Cambiado a auto para que se adapte al contenido */
+    /* background-color: aqua; */
+    padding-top: 20px;
 }
 
-#contenedor{
-    margin-top: 100px;
-    width: 60%;
-    height: 200px;
-    background-color: aqua;
-   /* text-align: center;
-    position: absolute;
-    top: 110px;
-    left: 50%; */
+input {
+    height: 30px;
+    color: white;
+    background: black;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 }
 
-#parrafoText{
+input:hover {
+    color: black;
+    background-color: white;
+}
 
+p,
+li {
+    color: white;
+    font-size: 15px;
+}
+
+button {
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+button:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 40px; /* Ajustar el tamaño del encabezado */
+    }
+
+    #tareas, #eventos {
+        width: 45%; /* Ajustar el ancho para tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Ajustar el tamaño del encabezado */
+    }
+
+    #tareas, #eventos {
+        width: 100%; /* Pantallas pequeñas: cada sección ocupa el 100% */
+        margin-top: 20px;
+    }
+
+    #conteiner {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
 }
 
 @media (max-width: 576px) {
-    .input-box .input-field {
-      width: 100%;
-      margin: 10px 0;
+    h1 {
+        font-size: 30px; /* Ajustar el tamaño del encabezado */
     }
-  }
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #Granny {
+       display: none;
+    }
+
+    #sid{
+       display: none;
+    }
+
+    #ardilla{
+        display: none;
+    }
+
+    #cont-eventos {
+        margin-top: 20px; /* Margen superior para separar de #Granny */
+    }
+}
