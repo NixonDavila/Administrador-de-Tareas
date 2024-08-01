@@ -121,6 +121,7 @@ input:hover {
 
 p,
 li {
+    padding: 12px;
     color: white;
     font-size: 15px;
 }
